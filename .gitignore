@@ -1,0 +1,11 @@
+# Vom Betriebssystem erzeugte Dateien
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor-Ordner
+.vscode/
+.idea/
+
+# Logs
+*.log

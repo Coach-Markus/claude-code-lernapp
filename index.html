@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <!-- Sorgt dafür, dass die App auf iPhone/iPad richtig skaliert; viewport-fit=cover nutzt den Bildschirm bis zum Rand -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Lerne Claude Code in neun ruhigen Lektionen – offline nutzbar auf iPhone und iPad.">
+
+  <title>Claude Code lernen</title>
+
+  <!-- Macht die App installierbar auf dem Home-Bildschirm -->
+  <link rel="manifest" href="./manifest.webmanifest">
+
+  <!-- Farbe der Statusleiste / Browser-Oberfläche -->
+  <meta name="theme-color" content="#1f2a2e">
+
+  <!-- Besondere Angaben für Apple (iPhone/iPad), damit es sich wie eine echte App anfühlt -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Claude Code">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="kopf">
+    <div class="kopf-innen">
+      <button id="kopf-titel" class="kopf-titel" type="button" aria-label="Zur Übersicht">
+        Claude Code <span class="kopf-akzent">lernen</span>
+      </button>
+      <button id="thema-knopf" class="thema-knopf" type="button">🌙 Dunkel</button>
+    </div>
+  </header>
+
+  <main id="app" class="inhalt">
+    <!-- Hier baut js/app.js die Übersicht und die Lektionen ein -->
+  </main>
+
+  <footer class="fuss">
+    <p>Deine Lern-App · Fortschritt bleibt auf diesem Gerät · funktioniert offline</p>
+  </footer>
+
+  <!-- Zuerst die Inhalte (Daten), dann die Logik -->
+  <script src="./js/lektionen.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

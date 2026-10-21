@@ -1,0 +1,17 @@
+{
+  "name": "Claude Code lernen",
+  "short_name": "Claude Code",
+  "description": "Lerne Claude Code in neun ruhigen Lektionen – offline nutzbar auf iPhone und iPad.",
+  "lang": "de",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#161d20",
+  "theme_color": "#1f2a2e",
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
