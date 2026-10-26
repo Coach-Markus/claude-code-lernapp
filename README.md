@@ -2,6 +2,9 @@
 
 Eine kleine Lern-App, mit der Markus Möslang **Claude Code** lernt — in neun ruhigen, aufeinander aufbauenden Lektionen. Gebaut als **Progressive Web App (PWA)**: Sie läuft im Browser, lässt sich auf iPhone und iPad zum Home-Bildschirm hinzufügen und funktioniert **offline**.
 
+**🔗 Live:** <https://coach-markus.github.io/claude-code-lernapp/>
+**📦 Code:** <https://github.com/Coach-Markus/claude-code-lernapp>
+
 ## Was drin ist
 
 - Neun Lektionen mit Erklärung, Beispiel zum Abtippen, Übung und Quiz
@@ -34,9 +37,19 @@ Zum Beenden im PowerShell-Fenster `Strg + C` drücken.
 | `dev-server.ps1` | Kleiner lokaler Testserver (nur zum Entwickeln) |
 | `CLAUDE.md` | Projektwissen für Claude Code |
 
-## Online stellen
+## Online stellen & aktualisieren
 
-Diese App ist eine reine statische Website und lässt sich kostenlos veröffentlichen, z. B. über **GitHub Pages** oder **Netlify**. Eine Schritt-für-Schritt-Anleitung steht in [`ANLEITUNG-Veroeffentlichen.md`](./ANLEITUNG-Veroeffentlichen.md).
+Diese App ist bereits über **GitHub Pages** veröffentlicht (siehe Live-Adresse oben). Die ausführliche Anleitung steht in [`ANLEITUNG-Veroeffentlichen.md`](./ANLEITUNG-Veroeffentlichen.md).
+
+**Änderungen hochladen:** Nach dem Bearbeiten in PowerShell im Projektordner:
+
+```powershell
+git add .
+git commit -m "Was ich geändert habe"
+git push
+```
+
+GitHub Pages aktualisiert sich dann von selbst. Hast du App-Dateien geändert, vorher in `service-worker.js` die `CACHE_VERSION` erhöhen (z. B. `cclern-v2`), damit die Geräte die neue Version laden.
 
 ## Technik-Hinweis
 

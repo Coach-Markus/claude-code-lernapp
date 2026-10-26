@@ -6,6 +6,13 @@ Eine Lern-App für **Markus Möslang**, mit der er Claude Code lernt. Gebaut als
 
 Markus ist Einsteiger in Claude Code und will es lernen, um später eigene Apps und Tools für sein Business (systemisches Coaching, Heilpraktiker für Psychotherapie, Firmenseminare) zu bauen. Die App vermittelt die Grundlagen in neun aufeinander aufbauenden Lektionen.
 
+## Veröffentlichung
+
+- **Live (GitHub Pages):** <https://coach-markus.github.io/claude-code-lernapp/>
+- **Repository:** <https://github.com/Coach-Markus/claude-code-lernapp> (Remote `origin`, Branch `main`)
+- **Aktualisieren:** Änderungen mit `git add .`, `git commit -m "..."`, `git push` hochladen — GitHub Pages baut dann automatisch neu. Bei geänderten App-Dateien vorher die `CACHE_VERSION` in `service-worker.js` erhöhen.
+- Windows-Hinweis: Git nutzt hier `http.sslBackend schannel` (Windows-Zertifikatsspeicher), damit `push` ohne Zertifikatsfehler läuft.
+
 ## Technischer Ansatz (bewusst einfach gehalten)
 
 - **Reine statische Website**: nur HTML, CSS und JavaScript. **Kein** Build-Schritt, **kein** `node_modules`, **keine** Frameworks.
